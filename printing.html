@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Printing instructions for the first- and second-floor CMSE graduate space.">
+    <title>Printing Instructions | CMSE GSO</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/printing.js" defer></script>
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="CMSE GSO home">
+                <span class="brand-mark">GSO</span>
+                <span><strong>CMSE</strong><small>Graduate Student Organization</small></span>
+            </a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+                <span></span><span></span><span></span><span class="sr-only">Menu</span>
+            </button>
+            <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="gso.html">GSO</a>
+                <a href="academics.html">Academics</a>
+                <a href="recr.html">RECR</a>
+                <a href="international.html">International Students</a>
+                <a class="active" href="printing.html">Printing</a>
+                <a href="wellness.html">Wellness Center</a>
+                <a href="index.html#events">Events</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-main printing-page">
+        <div class="container">
+            <div class="page-intro printing-intro">
+                <p class="eyebrow">CMSE graduate space · practical guide</p>
+                <h1>Printing instructions</h1>
+                <p>Choose the floor where you are standing, open that printer’s login page, then follow the same Direct
+                    Print workflow.</p>
+            </div>
+
+            <section class="floor-picker" aria-labelledby="floor-picker-title">
+                <div>
+                    <p class="section-kicker">Start here</p>
+                    <h2 id="floor-picker-title">Which floor are you on?</h2>
+                </div>
+                <div class="floor-switch" role="group" aria-label="Choose printer floor">
+                    <button type="button" data-floor="first" aria-pressed="true">First Floor</button>
+                    <button type="button" data-floor="second" aria-pressed="false">Second Floor</button>
+                </div>
+            </section>
+
+            <section class="printer-access" aria-labelledby="printer-access-title">
+                <div class="printer-access-copy">
+                    <p class="eyebrow">Selected printer</p>
+                    <h2 id="printer-access-title" data-printer-floor-label>First Floor</h2>
+                    <p>Open the printer’s web interface in Safari, Chrome, or Edge. The PDF notes that Brave is not
+                        supported.</p>
+                    <p class="printer-purpose"><strong>Color printing:</strong> use <a
+                            href="https://www.egr.msu.edu/decs/services/printing" target="_blank"
+                            rel="noopener">DECS</a>. This page covers the CMSE graduate-space printers, which are used
+                        for black-and-white printing.</p>
+                    <a class="printer-login" data-printer-login href="http://35.9.131.150:8000/" target="_blank"
+                        rel="noopener">Open First Floor printer login</a>
+                </div>
+                <div class="printer-address" aria-label="Selected printer address">
+                    <span class="printer-address-label">Printer address</span>
+                    <code data-floor-panel="first">http://35.9.131.150:8000/</code>
+                    <code data-floor-panel="second" hidden>http://35.9.135.85:8000/</code>
+                </div>
+            </section>
+
+            <div class="printing-grid">
+                <section class="printing-section" aria-labelledby="steps-title">
+                    <p class="section-kicker">01 / Send your file</p>
+                    <h2 id="steps-title">Direct Print, step by step</h2>
+                    <ol class="printing-steps">
+                        <li><strong>Open the login page</strong><span>Use the floor selector above to open the correct
+                                printer interface.</span></li>
+                        <li><strong>Log in</strong><span>You can use the last five digits of the PIN on your MSU ID as
+                                your username with no password, or use the shared default credentials below.</span></li>
+                        <li><strong>Choose “Direct Print”</strong><span>Direct Print supports PDF, PS/EPS, and image
+                                files.</span></li>
+                        <li><strong>Review the job and print</strong><span>Check the file, paper size, copies, and
+                                whether you want double-sided printing before submitting.</span></li>
+                    </ol>
+                    <p class="security-note"><strong>Default login:</strong> Username <code>7654321</code> · Password
+                        <code>1987</code><br><strong>Preferred option:</strong> Use your individual MSU ID login when
+                        possible.
+                    </p>
+                </section>
+
+                <section class="printing-section tips-section" aria-labelledby="tips-title">
+                    <p class="section-kicker">02 / Before you send</p>
+                    <h2 id="tips-title">Useful settings</h2>
+                    <div class="tip-list">
+                        <div><strong>Quality Settings</strong>
+                            <p>Increase the resolution when you need a sharper print.</p>
+                        </div>
+                        <div><strong>Print Settings</strong>
+                            <p>Increase the number of copies or turn on double-sided printing.</p>
+                        </div>
+                        <div><strong>Handwritten iPad work</strong>
+                            <p>Try “Enlarge Print Area” or “Enlarge/Reduce to Fit Paper Size” so the page fills the
+                                paper correctly.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <section class="troubleshooting" aria-labelledby="troubleshooting-title">
+                <div>
+                    <p class="section-kicker">03 / If the printer beeps</p>
+                    <h2 id="troubleshooting-title">Troubleshooting</h2>
+                </div>
+                <div class="troubleshooting-copy">
+                    <p>If you hear three or four loud beeps immediately after printing, the printer may be trying to
+                        draw paper from a location that is empty.</p>
+                    <ol>
+                        <li>Log in on the printer itself.</li>
+                        <li>Change the paper location by clicking the box in the bottom-left corner, then choose
+                            <strong>Letter</strong>.
+                        </li>
+                        <li>Alternatively, move paper to the smaller tray on the right side.</li>
+                    </ol>
+                </div>
+            </section>
+
+            <p class="printing-source">Source: CMSE Printing Instructions PDF. Printer addresses and steps should be
+                rechecked if department hardware changes.</p>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p><strong>CMSE GSO</strong> · Michigan State University</p>
+            <p><a href="getting-started.html">Back to the first-year guide</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
