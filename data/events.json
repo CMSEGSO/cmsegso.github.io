@@ -1,1 +1,13 @@
-[]
+[
+  {
+    "date": "2026-09-24",
+    "title": "CMSE GSO Kickoff Meeting",
+    "description": "Share what you would like to see from the GSO and enjoy Woody's Oasis Mediterranean food.",
+    "time": "12:00 PM",
+    "location": "CMSE 1502, Big Conference Room",
+    "flyer": {
+      "src": "GSO_kickoff%20flyer.png",
+      "alt": "CMSE GSO kickoff meeting flyer for Thursday, September 24 at 12:00 PM in CMSE 1502, Big Conference Room. Mediterranean food provided."
+    }
+  }
+]

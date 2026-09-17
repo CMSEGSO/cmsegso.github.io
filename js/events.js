@@ -1,4 +1,5 @@
 const eventsList = document.querySelector('#events-list');
+const featuredEvent = document.querySelector('#featured-event');
 
 function formatDate(dateString) {
     return new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric', year: 'numeric' }).format(new Date(`${dateString}T12:00:00`));
@@ -9,6 +10,8 @@ function renderEvents(events) {
     const upcoming = events
         .filter((event) => new Date(`${event.date}T23:59:59`) >= new Date())
         .sort((first, second) => first.date.localeCompare(second.date));
+
+    renderFeaturedEvent(upcoming.find((event) => event.flyer));
 
     if (!upcoming.length) {
         eventsList.innerHTML = '<p class="loading-message">No upcoming events are posted right now. Check back soon.</p>';
@@ -22,6 +25,23 @@ function renderEvents(events) {
       <p class="event-meta">${event.time}<br>${event.location}${event.link ? `<br><a class="event-link" href="${event.link}">Details →</a>` : ''}</p>
     </article>
   `).join('');
+}
+
+function renderFeaturedEvent(event) {
+    if (!featuredEvent) return;
+    if (!event?.flyer) {
+        featuredEvent.replaceChildren();
+        return;
+    }
+
+    const image = document.createElement('img');
+    image.src = event.flyer.src;
+    image.alt = event.flyer.alt;
+
+    const card = document.createElement('article');
+    card.className = 'featured-event-card';
+    card.append(image);
+    featuredEvent.replaceChildren(card);
 }
 
 if (eventsList) {
