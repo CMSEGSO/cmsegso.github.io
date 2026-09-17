@@ -164,6 +164,10 @@ a {
 }
 
 .hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1.25fr) minmax(280px, .75fr);
+    align-items: center;
+    gap: 48px;
     padding: 78px 0 64px;
     max-width: var(--max);
 }
@@ -202,13 +206,11 @@ h3 {
 }
 
 .featured-event {
-    width: min(calc(100% - 48px), var(--max));
-    margin: -28px auto 64px;
+    width: min(100%, 440px);
+    justify-self: end;
 }
 
 .featured-event-card {
-    width: min(100%, 620px);
-    margin: 0 auto;
     background: var(--white);
     box-shadow: 0 10px 28px rgba(23, 34, 31, .1);
 }
@@ -2319,6 +2321,7 @@ button:focus-visible {
     }
 
     .hero {
+        grid-template-columns: 1fr;
         padding: 54px 0 50px;
     }
 
@@ -2331,9 +2334,9 @@ button:focus-visible {
     }
 
     .featured-event {
-        width: min(calc(100% - 32px), var(--max));
-        margin-top: -18px;
-        margin-bottom: 50px;
+        width: min(100%, 620px);
+        justify-self: center;
+        margin-top: 4px;
     }
 
     .section-heading {
