@@ -532,6 +532,17 @@ button:focus-visible {
     margin: 0;
 }
 
+.document-flyer {
+    margin: 24px 0 0;
+    max-width: 440px;
+}
+
+.document-flyer img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
 .document-decision {
     background: var(--green);
     color: var(--white);
