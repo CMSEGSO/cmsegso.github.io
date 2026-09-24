@@ -24,3 +24,5 @@ Events in the `data/events.json` file are formatted as follows:
   }
 ]
 ```
+
+The public GSO actions index is `actions.html`. Add each future record as a linked entry there and publish its supporting document in `actions/action-[topic]-[year].html`.
