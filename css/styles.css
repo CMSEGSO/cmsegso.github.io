@@ -2252,6 +2252,28 @@ button:focus-visible {
     color: #d2e0d8;
 }
 
+.wellness-qr {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin: 20px 0 0;
+}
+
+.wellness-qr img,
+.document-qr img {
+    background: var(--white);
+    display: block;
+    height: auto;
+    padding: 7px;
+    width: 142px;
+}
+
+.wellness-qr figcaption {
+    color: #d2e0d8;
+    font-size: 13px;
+}
+
 .wellness-motto {
     color: var(--white) !important;
     font: 700 22px 'Space Grotesk', sans-serif;
@@ -2286,6 +2308,10 @@ button:focus-visible {
     color: #d2e0d8;
     font-size: 12px;
     padding: 12px 17px 15px;
+}
+
+.document-qr {
+    margin: 24px 0 0;
 }
 
 .guide-section-final p {
