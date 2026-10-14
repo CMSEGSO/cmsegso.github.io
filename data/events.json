@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "title": "Command-Line Tutorial",
+    "date": "2026-10-22",
+    "time": "12:00 PM",
+    "location": "Room 1502",
+    "description": "Learn command-line basics and ways to customize your interface. Free Barrio food will be provided—please mark that you're attending in the Slack poll.",
+    "link": "",
+    "flyer": {
+      "src": "GSO_CLI_Event.png",
+      "alt": "Command-Line Tutorial event flyer"
+    }
+  }
+]
