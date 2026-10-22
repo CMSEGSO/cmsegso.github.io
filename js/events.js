@@ -8,7 +8,7 @@ function formatDate(dateString) {
 function renderEvents(events) {
     if (!eventsList) return;
     const upcoming = events
-        .filter((event) => new Date(`${event.date}T23:59:59`) >= new Date())
+        .filter((event) => event.status !== 'completed' && new Date(`${event.date}T23:59:59`) >= new Date())
         .sort((first, second) => first.date.localeCompare(second.date));
 
     renderFeaturedEvent(upcoming.find((event) => event.flyer));

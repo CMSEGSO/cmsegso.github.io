@@ -25,4 +25,6 @@ Events in the `data/events.json` file are formatted as follows:
 ]
 ```
 
+Set an event's optional `status` to `"completed"` once it has happened. Its record is preserved, but it no longer appears in upcoming events or the featured flyer.
+
 The public GSO actions index is `actions.html`. Add each future record as a linked entry there and publish its supporting document in `actions/action-[topic]-[year].html`.
