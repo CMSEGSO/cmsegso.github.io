@@ -1,5 +1,17 @@
 [
   {
+    "title": "Friendsgiving",
+    "date": "2026-11-19",
+    "time": "12:00 PM",
+    "location": "EB1502",
+    "description": "Join us for Friendsgiving!",
+    "link": "",
+    "flyer": {
+      "src": "Friendsgiving.png",
+      "alt": "Friendsgiving event flyer"
+    }
+  },
+  {
     "title": "Command-Line Tutorial",
     "date": "2026-10-22",
     "status": "completed",
